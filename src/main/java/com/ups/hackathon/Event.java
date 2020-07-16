@@ -1,7 +1,18 @@
 public class Event {
 
     private String eventName;
-    public Event(String eventName) {
+    private String location;
+    private String date;
+    private double hours;
+
+    public Event(String eventName, String location, String date, double hours) {
         this.eventName = eventName;
+        this.location = location;
+        this.date = date;
+        this.hours = hours;
+    }
+
+    public double getHours() {
+        return hours;
     }
 }

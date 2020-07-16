@@ -10,10 +10,11 @@ public class User {
     private String initiativeType;
     private List skills;
 
-    public User(String name, String address, String email, String skillA, String skillB, String skillC, String skillD, String skillE) {
+    public User(String name, String address, String email, String initiativeType, String skillA, String skillB, String skillC, String skillD, String skillE) {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.initiativeType = initiativeType;
         skills = new ArrayList<String>();
 
         skills.add(skillA);
@@ -22,10 +23,11 @@ public class User {
         skills.add(skillD);
         skills.add(skillE);
     }
-    public User(String name, String address, String email, String skillA, String skillB, String skillC, String skillD) {
+    public User(String name, String address, String email, String initiativeType, String skillA, String skillB, String skillC, String skillD) {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.initiativeType = initiativeType;
         skills = new ArrayList<String>();
 
         skills.add(skillA);
@@ -33,32 +35,42 @@ public class User {
         skills.add(skillC);
         skills.add(skillD);
     }
-    public User(String name, String address, String email, String skillA, String skillB, String skillC) {
+    public User(String name, String address, String email, String initiativeType, String skillA, String skillB, String skillC) {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.initiativeType = initiativeType;
         skills = new ArrayList<String>();
 
         skills.add(skillA);
         skills.add(skillB);
         skills.add(skillC);
     }
-    public User(String name, String address, String email, String skillA, String skillB) {
+    public User(String name, String address, String email, String initiativeType, String skillA, String skillB) {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.initiativeType = initiativeType;
         skills = new ArrayList<String>();
 
         skills.add(skillA);
         skills.add(skillB);
     }
-    public User(String name, String address, String email, String skillA) {
+    public User(String name, String address, String email, String initiativeType, String skillA) {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.initiativeType = initiativeType;
         skills = new ArrayList<String>();
 
         skills.add(skillA);
+    }
+    public User(String name, String address, String email, String initiativeType) {
+        this.name = name;
+        this.address = address;
+        this.email = email;
+        this.initiativeType = initiativeType;
+        skills = new ArrayList<String>();
     }
     public User(String name, String address, String email) {
         this.name = name;
