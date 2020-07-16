@@ -25,41 +25,73 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		 <plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+		</plugins>
+	</build>
 
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>UPSDevArtifacts</id>
-			<name>UPSDev Artifacts</name>
-			<url>https://nexusrmps.njrar.us.ups.com:8443/repository/UPSDevArtifacts</url>
-			<layout>default</layout>
-		</repository>
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>UPSDevArtifacts</id>
+            <name>UPSDev Artifacts</name>
+            <url>https://nexusrm.ups.com:8443/repository/UPSDevArtifacts</url>
+            <layout>default</layout>
+        </repository>
 
-		<snapshotRepository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>UPSDevArtifacts</id>
-			<name>UPSDev Artifacts</name>
-			<url>https://nexusrmps.njrar.us.ups.com:8443/repository/UPSDevArtifacts</url>
-			<layout>default</layout>
-		</snapshotRepository>
-	</distributionManagement>
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>UPSDevArtifacts</id>
+            <name>UPSDev Artifacts</name>
+            <url>https://nexusrm.ups.com:8443/repository/UPSDevArtifacts</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
 
-	<repositories>
-		<repository>
-			<id>UPSRepositories</id>
-			<name>UPSRepositories</name>
-			<url>https://nexusrmps.njrar.us.ups.com:8443/repository/UPS-Repositories/</url>
-			<layout>default</layout>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+    <repositories>
+    
+        <repository>
+            <id>UPS Maven Central Repositories</id>
+            <name>UPS Maven Central Repositories</name>
+            <url>https://nexusrm.ups.com:8443/repository/ups-proxy/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>UPS-Repositories</id>
-			<url>https://nexusrmps.njrar.us.ups.com:8443/repository/UPS-Repositories</url>
-		</pluginRepository>
-	</pluginRepositories>
+        <repository>
+            <id>UPS Internal Repositories</id>
+            <name>UPS Internal Repositories</name>
+            <url>https://nexusrm.ups.com:8443/repository/ups-releases/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>UPS Internal Third Party Repositories</id>
+            <name>UPS Internal Third Party Repositories</name>
+            <url>https://nexusrm.ups.com:8443/repository/ups-third-party/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+    </repositories>
+
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>UPS-Repositories</id>
+            <url>https://nexusrm.ups.com:8443/repository/ups-proxy</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
