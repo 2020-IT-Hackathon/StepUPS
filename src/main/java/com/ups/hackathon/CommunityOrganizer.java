@@ -1,3 +1,8 @@
+package com.ups.hackathon;
+
+import java.util.List;
+import java.util.ArrayList;
+
 public class CommunityOrganizer extends User {
 
     private List<Event> eventList;
@@ -24,8 +29,8 @@ public class CommunityOrganizer extends User {
         super(name, address, email);
     }
 
-    private void createEvent(String eventName, String location, String date) {
-        eventList.add(new Event(eventName, location, date));
+    private void createEvent(String eventName, String location, String date, double hours) {
+        eventList.add(new Event(eventName, location, date, hours));
     }
 
 }

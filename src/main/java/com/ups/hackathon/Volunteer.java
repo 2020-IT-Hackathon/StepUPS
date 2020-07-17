@@ -1,3 +1,8 @@
+package com.ups.hackathon;
+
+import java.util.List;
+import java.util.ArrayList;
+
 public class Volunteer extends User {
     
     private double hoursVolunteered;

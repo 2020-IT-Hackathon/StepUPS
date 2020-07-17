@@ -1,6 +1,7 @@
 package com.ups.hackathon;
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class User {
 
@@ -88,7 +89,7 @@ public class User {
         email = newEmail;
     }
     public void addSkill(String newSkill) {
-        if (skill.size() < 5) skills.add(newSkill);
+        if (skills.size() < 5) skills.add(newSkill);
     }
     public void removeSkill(String skillToRemove) {
         if (skills.contains(skillToRemove)) skills.remove(skillToRemove);
