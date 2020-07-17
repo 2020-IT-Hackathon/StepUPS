@@ -80,6 +80,22 @@ public class User {
         this.email = email;
         skills = new ArrayList<String>();
     }
+    public String getName() {
+        return name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getInitiative() {
+        return initiativeType;
+    }
+    public String getSkills() {
+        return skill;
+    }
+        
     public void setName(String newName) {
         name = newName;
     }

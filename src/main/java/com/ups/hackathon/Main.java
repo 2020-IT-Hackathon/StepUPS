@@ -1,9 +1,10 @@
 package com.ups.hackathon;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("StepUPs");
+        List<Volunteer> volunteers = new ArrayList<Volunteer>();
+        volunteers.add(createVolunteerProfile());
     }
 
     public static Volunteer createVolunteerProfile() {
@@ -55,10 +56,15 @@ public class Main {
         return new Volunteer(name, address, email, initiative);
     }
 
-    public static void viewVolunteerProfile(List<Volunteer> volunteers) {
-        System.out.println("Whose profile would you like to view?");
-        for (int i = 0; i < volunteers.size(); i++) {
-            
+    public static void displayVolunteerData(ArrayList<Volunteer> volunteerList) {
+        for (int i = 0; i < volunteerList.size(); i++) {
+            System.out.println(volunteerList.get(i).getName());
+            System.out.println(volunteerList.get(i).getAddress());
+            System.out.println(volunteerList.get(i).getEmail());
+            System.out.println(volunteerList.get(i).getInitiative());
+            for (int j = 0; j < volunteerList.get(i).getSkills().size(); j++) {
+                System.out.println(volunteerList.get(i).getSkills().get(j));
+            }
         }
     }
 }
