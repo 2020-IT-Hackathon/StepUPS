@@ -1,0 +1,64 @@
+html{
+	background: #644117;
+	height: 100%;
+    margin: auto;
+	overflow:visible,scroll;
+	background: 
+}
+body{
+	background-color: #330000;
+}
+h1{
+	display: inline-block;
+	float: center;
+	text-align: center
+	font: Segoe UI;
+	font-size: 150%;
+}
+h2,p{
+	color: #FFb500;
+	right: 20px
+}
+h3{
+	font-size:10px
+}
+#Logo{
+	padding: 20px;
+	
+	width: 150px;
+}
+#column{
+	background: #633528;
+	width: 100%;
+	height:183px;
+	float: left;
+	padding-left: 24px;
+    padding-right: 5%;
+}
+#column2{
+	width: 50%;
+	height:183px;
+	float: right;
+	padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+
+}
+
+#forCarina {
+	height:175px;
+	width: 100%;
+	background: #FFb500;
+	position: relative;
+}
+#map{
+   padding-left: 24px;
+   padding-right: 7px;
+   padding-top: 1px;  
+}
+
+#Options{
+	width: 715px;
+	float:right;
+}
+
