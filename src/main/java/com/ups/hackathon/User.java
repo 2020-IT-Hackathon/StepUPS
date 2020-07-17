@@ -24,6 +24,7 @@ public class User {
         skills.add(skillD);
         skills.add(skillE);
     }
+
     public User(String name, String address, String email, String initiativeType, String skillA, String skillB, String skillC, String skillD) {
         this.name = name;
         this.address = address;

@@ -28,6 +28,9 @@ public class Volunteer extends User {
     public Volunteer(String name, String address, String email) {
         super(name, address, email);
     }
+    public void addHours(int hoursToAdd) {
+        hoursVolunteered += hoursToAdd;
+    }
     public double getHours() {
         return hoursVolunteered;
     }

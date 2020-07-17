@@ -16,8 +16,4 @@ public class Event {
         this.date = date;
         this.hours = hours;
     }
-
-    public double getHours() {
-        return hours;
-    }
 }

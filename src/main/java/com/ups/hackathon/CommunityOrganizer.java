@@ -32,5 +32,4 @@ public class CommunityOrganizer extends User {
     private void createEvent(String eventName, String location, String date, double hours) {
         eventList.add(new Event(eventName, location, date, hours));
     }
-
 }

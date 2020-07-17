@@ -39,7 +39,7 @@
                 <configuration>
                 <archive>
                     <manifest>
-                    <mainClass>com.mkyong.core.App</mainClass>
+                    <mainClass>com.ups.hackathon.Main</mainClass>
                     </manifest>
                 </archive>
                 </configuration>
